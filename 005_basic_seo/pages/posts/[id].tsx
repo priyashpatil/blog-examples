@@ -11,6 +11,8 @@ export default function Post({
 }: {
   postData: {
     title: string;
+    id: string;
+    excerpt: string;
     date: string;
     contentHtml: string;
     categories: string[];
@@ -20,6 +22,27 @@ export default function Post({
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        {/* metadata */}
+        <meta name="title" content={postData.title} />
+        <meta name="description" content={postData.excerpt} />
+
+        {/* og metadata */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={"https://www.example.com/posts/" + postData.id}
+        />
+        <meta property="og:title" content={postData.title} />
+        <meta property="og:description" content={postData.excerpt} />
+
+        {/* twitter metadata */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content={postData.title} />
+        <meta
+          property="twitter:url"
+          content={"https://www.example.com/posts/" + postData.id}
+        />
+        <meta property="twitter:description" content={postData.excerpt} />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
