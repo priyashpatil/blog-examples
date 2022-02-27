@@ -1,0 +1,51 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+pre code {
+  border-radius: 4px;
+  padding: 24px !important;
+}
+
+code,
+code::after,
+code::before {
+  font-size: 0.9em;
+  color: rgb(212, 0, 255);
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+code::after,
+code::before {
+  content: "`";
+}
+
+pre code::after,
+pre code::before {
+  content: none;
+}
