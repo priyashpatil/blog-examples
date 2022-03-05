@@ -1,0 +1,16 @@
+{
+    "name": "monorepo",
+    "version": "1.0.0",
+    "description": "Monorepo",
+    "keywords": [],
+    "author": "",
+    "license": "UNLICENSED",
+    "private": "true",
+    "workspaces": [
+      "apps/app_a",
+      "apps/app_b",
+      "apps/app_c",
+      "libs/lib_a",
+      "libs/lib_b"
+    ]
+  }
